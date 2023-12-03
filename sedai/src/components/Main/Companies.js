@@ -1,9 +1,15 @@
 import React from "react";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
+import { Avatar, Grid, styled } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+
+const RectangularAvatar = styled(Avatar)({
+  width: 250,
+  height: 50,
+  borderRadius: "8px", // Set border-radius to create a rectangular shape
+});
+
 const Companies = () => {
   const theme = useTheme();
   const flexCenter = {
@@ -14,8 +20,10 @@ const Companies = () => {
   };
   const gridItemStyle = {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "center",
     alignItems: "center",
+    ml: 2,
+
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
       flexDirection: "column",
@@ -32,7 +40,11 @@ const Companies = () => {
           Why Autonomous Cloud Management?
         </Typography>
         <br />
-        <Typography variant="h6" component="summary" sx={{ ...flexCenter }}>
+        <Typography
+          variant="h6"
+          component="summary"
+          sx={{ ...flexCenter, ml: 5, mr: 5 }}
+        >
           Optimizing modern applications is a problem now beyond human scale
           driven by microservice architectures and rapid release cycles.
           Operations teams face a near-impossible task using today's rules-based
@@ -50,123 +62,150 @@ const Companies = () => {
           Engage with leaders & innovators
         </Typography>
       </Grid>
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        sx={{
-          ...flexCenter,
-
-          mb: 5,
-          border: "3px solid black",
-        }}
-      >
-        <Card>
-          <CardMedia
-            component="img"
-            alt="company"
-            height="50"
-            width="100"
-            image="https://hopin.com/quiin/sponsors/logos/000/529/403/large/PayPal.svg.png?1657340840"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/529/403/large/PayPal.svg.png?1657340840"
+            alt="customer"
+          />
+        </Card>
+      </Grid>
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/534/183/large/paloaltonetworks-logo.png?1658976316"
+            alt="customer"
           />
         </Card>
       </Grid>{" "}
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        sx={{
-          ...flexCenter,
-
-          mb: 5,
-          border: "3px solid black",
-        }}
-      >
-        <Card>
-          <CardMedia
-            component="img"
-            alt="company"
-            height="50"
-            width="100"
-            image="https://hopin.com/quiin/sponsors/logos/000/534/183/large/paloaltonetworks-logo.png?1658976316"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://usercontent.hopin.com/sponsors/logos/000/616/069/large/KnowBe4_Logo.jpeg?1698633942"
+            alt="customer"
           />
         </Card>
       </Grid>{" "}
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        sx={{
-          ...flexCenter,
-
-          mb: 5,
-          border: "3px solid black",
-        }}
-      >
-        <Card>
-          <CardMedia
-            component="img"
-            alt="company"
-            height="50"
-            width="100"
-            image="https://usercontent.hopin.com/sponsors/logos/000/616/078/large/Wipro_Primary_Logo_Color_RGB.svg.png?1698634703"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/529/404/large/Paylocity_Logo_Logo.jpeg?1657341207"
+            alt="customer"
           />
         </Card>
       </Grid>{" "}
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        sx={{
-          ...flexCenter,
-          height: 150,
-
-          mb: 5,
-          border: "3px solid black",
-        }}
-      >
-        <Card>
-          <CardMedia
-            component="img"
-            alt="company"
-            height="50"
-            width="100"
-            image="https://usercontent.hopin.com/sponsors/logos/000/616/069/large/KnowBe4_Logo.jpeg?1698633942"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/534/189/large/ringcentral_2.0_logo_POS.png?1658984087"
+            alt="customer"
           />
         </Card>
       </Grid>{" "}
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        md={4}
-        lg={3}
-        sx={{
-          ...flexCenter,
-          height: 150,
-
-          mb: 5,
-          border: "3px solid black",
-        }}
-      >
-        <Card>
-          <CardMedia
-            component="img"
-            alt="company"
-            height="50"
-            width="100"
-            image="https://hopin.com/quiin/sponsors/logos/000/529/406/large/horizontal_darktext.png?1657342213"
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://usercontent.hopin.com/sponsors/logos/000/616/079/large/velocity-global-new-logo.png?1698634750"
+            alt="customer"
           />
         </Card>
       </Grid>{" "}
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/534/184/large/Belcorp-Logo-ready.png?1658976417"
+            alt="customer"
+          />
+        </Card>
+      </Grid>{" "}
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://usercontent.hopin.com/sponsors/logos/000/616/079/large/velocity-global-new-logo.png?1698634750"
+            alt="customer"
+          />
+        </Card>
+      </Grid>{" "}
+      <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Card
+          sx={{
+            ...flexCenter,
+            width: 345,
+            height: 190,
+            mb: 5,
+            border: "1px solid black",
+          }}
+        >
+          <RectangularAvatar
+            src="https://hopin.com/quiin/sponsors/logos/000/529/406/large/horizontal_darktext.png?1657342213"
+            alt="customer"
+          />
+        </Card>
+      </Grid>
     </Grid>
   );
 };

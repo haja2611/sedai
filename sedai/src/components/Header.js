@@ -9,6 +9,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Footer from "./Footer";
 import CloudSpeaker from "./Main/CloudSpeaker";
 import Companies from "./Main/Companies";
+import Supportedtech from "./Main1/Supportedtech";
+import MonthlyCalendar from "./Main1/MonthlyCalendar";
 
 function Header() {
   // function scrollFunction() {
@@ -174,9 +176,11 @@ function Header() {
           </MenuBox>
         </StyledToolbar>
       </AppBar> */}
-      <Companies />
-      {/* <CloudSpeaker /> */}
-      <Footer />
+      {/* <Companies />
+      <CloudSpeaker /> */}
+      <Supportedtech />
+      <MonthlyCalendar />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -165,7 +165,7 @@ const Footer = () => {
           </a>
           <a href="#" style={LinkStyle}>
             Documentation
-          </a>
+          </a>  
         </Grid>
       </Grid>
       <Footer1 />
